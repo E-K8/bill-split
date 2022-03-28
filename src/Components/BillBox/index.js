@@ -6,17 +6,18 @@ function BillBox({ data }) {
   console.log(data);
   return (
     <Card title="Card title">
-      <Card type="inner" title="Inner Card title" extra={<a href="#">More</a>}>
-        Inner Card content
-      </Card>
-      <Card
-        style={{ marginTop: 16 }}
-        type="inner"
-        title="Inner Card title"
-        extra={<a href="#">More</a>}
-      >
-        Inner Card content
-      </Card>
+      {data.map((bill) => (
+        <div>
+          <Card
+            key={bill.rec_exp_id}
+            type="inner"
+            title={bill.rec_exp_name}
+            extra={<a href="#">More</a>}
+          >
+            {bill.rec_exp_amount}
+          </Card>
+        </div>
+      ))}
     </Card>
   );
 }
