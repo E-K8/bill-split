@@ -5,7 +5,7 @@ import "antd/dist/antd.css";
 function BillBox({ data }) {
   console.log(data);
   return (
-    <Card title="Card title">
+    <Card title="Your Bills">
       {data.map((bill) => (
         <div>
           <Card
