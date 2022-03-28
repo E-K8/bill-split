@@ -16,7 +16,7 @@ function App() {
       {/* <GetBills /> */}
       <AddBill />
       {data ? <BillBox data={data.payload} /> : <></>}
-      <SplitBillBox />
+      {data ? <SplitBillBox data={data.payload} /> : <></>}
     </div>
   );
 }
