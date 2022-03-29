@@ -10,4 +10,4 @@ A five minute presentation, complete with how you worked as a team and a demonst
 
 The app lets housemates split bills for common expenditures.
 
-[Backend repository]()
+[Backend repository](https://github.com/NadjaGrothe/bill_splitter)
